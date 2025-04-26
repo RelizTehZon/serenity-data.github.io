@@ -15,12 +15,14 @@
             border-bottom: 1px solid #ddd;
         }
 
-        tr:nth-child(even){background-color: #f2f2f2}
+        tr:nth-child(even){background-color: #f2f2f2;}
     </style>
 </head>
 <body>
 <h1>Список транспортных средств:</h1>
 
+<!-- Проверяем наличие данных -->
+{% if cars %}
 <table>
     <tr>
         <th>Номерной знак</th>
@@ -29,15 +31,19 @@
         <th>Марка</th>
         <th>Владелец</th>
     </tr>
+    <!-- Цикл по списку машин -->
     {% for car in cars %}
     <tr>
-        <td>{{car['number']}}</td>
-        <td>{{car['color']}}</td>
-        <td>{{car['model']}}</td>
-        <td>{{car['brand']}}</td>
-        <td>{{car['owner']}}</td>
+        <td>{{ car.number }}</td>
+        <td>{{ car.color }}</td>
+        <td>{{ car.model }}</td>
+        <td>{{ car.brand }}</td>
+        <td>{{ car.owner }}</td>
     </tr>
     {% endfor %}
 </table>
+{% else %}
+<p>Данные отсутствуют.</p>
+{% endif %}
 </body>
 </html>
