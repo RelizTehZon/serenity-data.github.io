@@ -1,5 +1,26 @@
 [
-    {"brand": "Toyota", "model": "Camry", "year": 2020},
-    {"brand": "Ford", "model": "Mustang", "year": 2018},
-    {"brand": "BMW", "model": "X5", "year": 2022}
+    {
+        "brand": "Toyota",
+        "model": "Camry",
+        "year": 2020,
+        "color": "Black",
+        "numberPlate": "A123BC",
+        "owner": "John Doe"
+    },
+    {
+        "brand": "Ford",
+        "model": "Mustang",
+        "year": 2018,
+        "color": "red",
+        "numberPlate": "oooo00",
+        "owner": "Reliz"
+    },
+    {
+        "brand": "Ford",
+        "model": "X5",
+        "year": 2022,
+        "color": "red",
+        "numberPlate": "red",
+        "owner": "red"
+    }
 ]
