@@ -5,7 +5,7 @@ import requests
 app = Flask(__name__)
 
 # Репозиторий и путь к файлу CSV
-REPO_URL = 'https://github.com/RelizTehZon/transport_data/blob/main/cars.csv'
+REPO_URL = 'https://github.com/RelizTehZon/serenity-data.github.io/blob/main/cars.csv'
 
 
 @app.route('/')
